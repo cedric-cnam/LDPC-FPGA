@@ -1,0 +1,1 @@
+-wto "a3f0dfecd2704f04afe20cd4c63b7646" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_fpga_core_multi_packet_behav" "xil_defaultlib.tb_fpga_core_multi_packet" "xil_defaultlib.glbl" -log "elaborate.log" 

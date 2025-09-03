@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jun 27 09:15:33 2025
+# Process ID: 2573287
+# Current directory: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1
+# Command line: vivado -log ten_gig_eth_pcs_pma_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ten_gig_eth_pcs_pma_0.tcl
+# Log file: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/ten_gig_eth_pcs_pma_0.vds
+# Journal file: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ten_gig_eth_pcs_pma_0.tcl -notrace

@@ -1,0 +1,1098 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jun 27 09:15:33 2025
+# Process ID: 2573287
+# Current directory: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1
+# Command line: vivado -log ten_gig_eth_pcs_pma_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ten_gig_eth_pcs_pma_0.tcl
+# Log file: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/ten_gig_eth_pcs_pma_0.vds
+# Journal file: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ten_gig_eth_pcs_pma_0.tcl -notrace
+Command: synth_design -top ten_gig_eth_pcs_pma_0 -part xc7vx690tffg1761-3 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-1540] The version limit for your license is '2021.01' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2573415 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1365.023 ; gain = 100.000 ; free physical = 26961 ; free virtual = 42860
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_support' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_support.v:61]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_gt_common' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_gt_common.v:58]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter QPLL_FBDIV_TOP bound to: 66 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0101000000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'GTHE2_COMMON' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:5787]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000001010000 
+	Parameter COMMON_CFG bound to: 92 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_QPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter QPLL_CFG bound to: 27'b000010010000000000111000111 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b1111 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0101000000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b0 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0000010111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL_RP_COMP bound to: 1'b0 
+	Parameter QPLL_VTRL_RESET bound to: 2'b00 
+	Parameter RCAL_CFG bound to: 2'b00 
+	Parameter RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 2.0 - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'GTHE2_COMMON' (1#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:5787]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_gt_common' (2#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_gt_common.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_shared_clock_and_reset' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_shared_clock_and_reset.v:59]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (3#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19625]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (4#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19625]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (5#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer_rst' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:61]
+	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
+	Parameter C_RVAL bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer_rst' (6#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer_rst__parameterized0' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:61]
+	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
+	Parameter C_RVAL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer_rst__parameterized0' (6#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_shared_clock_and_reset' (7#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_shared_clock_and_reset.v:59]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_block' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_block.v:59]
+	Parameter MASTER_WATCHDOG_TIMER_RESET bound to: 29'b00110111111000010010110100000 
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_block.v:202]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_block.v:204]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_local_clock_and_reset' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_local_clock_and_reset.v:58]
+	Parameter RXRESETTIME_NOM bound to: 24'b000000000000011000011011 
+	Parameter RXRESETTIME_MAX bound to: 24'b000100011010010010100110 
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_sim_speedup_controller' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_sim_speedup_controller.v:61]
+	Parameter SYNTH_VALUE bound to: 24'b000100011010010010100110 
+	Parameter SIM_VALUE bound to: 24'b000000000000011000011011 
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25461]
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (8#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25461]
+INFO: [Synth 8-6157] synthesizing module 'LDCE' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25242]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_G_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'LDCE' (9#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25242]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_sim_speedup_controller' (10#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_sim_speedup_controller.v:61]
+INFO: [Synth 8-6157] synthesizing module 'BUFH' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:808]
+INFO: [Synth 8-6155] done synthesizing module 'BUFH' (11#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:808]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer_rst__parameterized1' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:61]
+	Parameter C_NUM_SYNC_REGS bound to: 7 - type: integer 
+	Parameter C_RVAL bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer_rst__parameterized1' (11#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer.v:59]
+	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer.v:68]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_ff_synchronizer' (12#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ff_synchronizer.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_local_clock_and_reset' (13#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_local_clock_and_reset.v:58]
+INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641]
+INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (16#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:26641]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_cable_pull_logic' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_cable_pull_logic.v:59]
+	Parameter CABLE_PULL_WATCHDOG_RESET bound to: 20'b00100000000000000000 
+	Parameter CABLE_UNPULL_WATCHDOG_RESET bound to: 20'b00100000000000000000 
+	Parameter GEARBOXSLIP_IGNORE_COUNT bound to: 4'b1111 
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_cable_pull_logic' (59#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_cable_pull_logic.v:59]
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_multi_GT' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_multi_gt.v:53]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_GT' [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_gt.v:55]
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter TXSYNC_OVRD_IN bound to: 1'b0 
+	Parameter TXSYNC_MULTILANE_IN bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'GTHE2_CHANNEL' [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4953]
+	Parameter ACJTAG_DEBUG_MODE bound to: 1'b0 
+	Parameter ACJTAG_MODE bound to: 1'b0 
+	Parameter ACJTAG_RESET bound to: 1'b0 
+	Parameter ADAPT_CFG0 bound to: 20'b00000000110000010000 
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b0001111111 
+	Parameter ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: FALSE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: FALSE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter A_RXOSCALRESET bound to: 1'b0 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CFOK_CFG bound to: 42'b100100100000000000000001000000111010000000 
+	Parameter CFOK_CFG2 bound to: 6'b100000 
+	Parameter CFOK_CFG3 bound to: 6'b100000 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 19 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 15 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG bound to: 29'b00000101111000000011111011100 
+	Parameter CPLL_FBDIV bound to: 4 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: TRUE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b001 
+	Parameter IS_CLKRSVD0_INVERTED bound to: 1'b0 
+	Parameter IS_CLKRSVD1_INVERTED bound to: 1'b0 
+	Parameter IS_CPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DMONITORCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_SIGVALIDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXPHDLYTSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter LOOPBACK_CFG bound to: 1'b0 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00011001 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_RSV bound to: 128 - type: integer 
+	Parameter PMA_RSV2 bound to: 469762058 - type: integer 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 15'b000000000001000 
+	Parameter PMA_RSV5 bound to: 4'b0000 
+	Parameter RESET_POWERSAVE_DISABLE bound to: 1'b0 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 61 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 4 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 83'b00000000000001000000000011111111110001000000000000011000010000010000000000000011010 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b010101 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 9'b000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: TRUE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00001000000000 
+	Parameter RXLPM_LF_CFG bound to: 18'b001001000000000000 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOOB_CLK_CFG bound to: PMA - type: string 
+	Parameter RXOSCALRESET_TIME bound to: 5'b00011 
+	Parameter RXOSCALRESET_TIMEOUT bound to: 5'b00000 
+	Parameter RXOUT_DIV bound to: 1 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b110000000000000000000010 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPI_CFG0 bound to: 2'b00 
+	Parameter RXPI_CFG1 bound to: 2'b11 
+	Parameter RXPI_CFG2 bound to: 2'b11 
+	Parameter RXPI_CFG3 bound to: 2'b11 
+	Parameter RXPI_CFG4 bound to: 1'b0 
+	Parameter RXPI_CFG5 bound to: 1'b0 
+	Parameter RXPI_CFG6 bound to: 3'b100 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RXSYNC_MULTILANE bound to: 1'b0 
+	Parameter RXSYNC_OVRD bound to: 1'b0 
+	Parameter RXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter RX_BIAS_CFG bound to: 24'b000011000000000000010000 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 7 - type: integer 
+	Parameter RX_CLKMUX_PD bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 4'b1010 
+	Parameter RX_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 14'b00000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DFELPM_CFG0 bound to: 4'b0110 
+	Parameter RX_DFELPM_CFG1 bound to: 1'b0 
+	Parameter RX_DFELPM_KLKH_AGC_STUP_EN bound to: 1'b1 
+	Parameter RX_DFE_AGC_CFG0 bound to: 2'b00 
+	Parameter RX_DFE_AGC_CFG1 bound to: 3'b100 
+	Parameter RX_DFE_AGC_CFG2 bound to: 4'b0000 
+	Parameter RX_DFE_AGC_OVRDEN bound to: 1'b1 
+	Parameter RX_DFE_GAIN_CFG bound to: 23'b00000000010000011000000 
+	Parameter RX_DFE_H2_CFG bound to: 12'b000000000000 
+	Parameter RX_DFE_H3_CFG bound to: 12'b000001000000 
+	Parameter RX_DFE_H4_CFG bound to: 11'b00011100000 
+	Parameter RX_DFE_H5_CFG bound to: 11'b00011100000 
+	Parameter RX_DFE_H6_CFG bound to: 11'b00000100000 
+	Parameter RX_DFE_H7_CFG bound to: 11'b00000100000 
+	Parameter RX_DFE_KL_CFG bound to: 33'b001000001000000000000001100010000 
+	Parameter RX_DFE_KL_LPM_KH_CFG0 bound to: 2'b01 
+	Parameter RX_DFE_KL_LPM_KH_CFG1 bound to: 3'b010 
+	Parameter RX_DFE_KL_LPM_KH_CFG2 bound to: 4'b0010 
+	Parameter RX_DFE_KL_LPM_KH_OVRDEN bound to: 1'b1 
+	Parameter RX_DFE_KL_LPM_KL_CFG0 bound to: 2'b10 
+	Parameter RX_DFE_KL_LPM_KL_CFG1 bound to: 3'b010 
+	Parameter RX_DFE_KL_LPM_KL_CFG2 bound to: 4'b0010 
+	Parameter RX_DFE_KL_LPM_KL_OVRDEN bound to: 1'b1 
+	Parameter RX_DFE_LPM_CFG bound to: 16'b0000000010000000 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DFE_ST_CFG bound to: 54'b000000111000010000000000000000000011000000000000111111 
+	Parameter RX_DFE_UT_CFG bound to: 17'b00011100000000000 
+	Parameter RX_DFE_VP_CFG bound to: 17'b00011101010100011 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b1111 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_CPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 2.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 15'b100001000010000 
+	Parameter TERM_RCAL_OVRD bound to: 3'b000 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 0 - type: integer 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 9'b000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: TRUE - type: string 
+	Parameter TXOOB_CFG bound to: 1'b0 
+	Parameter TXOUT_DIV bound to: 1 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPI_CFG0 bound to: 2'b00 
+	Parameter TXPI_CFG1 bound to: 2'b00 
+	Parameter TXPI_CFG2 bound to: 2'b00 
+	Parameter TXPI_CFG3 bound to: 1'b0 
+	Parameter TXPI_CFG4 bound to: 1'b0 
+	Parameter TXPI_CFG5 bound to: 3'b100 
+	Parameter TXPI_GREY_SEL bound to: 1'b0 
+	Parameter TXPI_INVSTROBE_SEL bound to: 1'b0 
+	Parameter TXPI_PPMCLK_SEL bound to: TXUSRCLK2 - type: string 
+	Parameter TXPI_PPM_CFG bound to: 8'b00000000 
+	Parameter TXPI_SYNFREQ_PPM bound to: 3'b000 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TXSYNC_MULTILANE bound to: 1'b0 
+	Parameter TXSYNC_OVRD bound to: 1'b0 
+	Parameter TXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter TX_CLK25_DIV bound to: 7 - type: integer 
+	Parameter TX_CLKMUX_PD bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 6'b000000 
+	Parameter TX_DEEMPH1 bound to: 6'b000000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b01100000110010 
+	Parameter TX_RXDETECT_PRECHARGE_TIME bound to: 17'b10101010111001100 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+	Parameter USE_PCS_CLK_PHASE_SEL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'GTHE2_CHANNEL' (60#1) [/opt/Xilinx/Vivado/Vivado/2018.2/scripts/rt/data/unisim_comp.v:4953]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_GT' (61#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_gt.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_multi_GT' (62#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_gtwizard_gth_10gbaser_multi_gt.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_block' (63#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_block.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0_support' (64#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_support.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'ten_gig_eth_pcs_pma_0' (65#1) [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.v:60]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_drp_ipif has unconnected port reset
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized5 has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized5 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized5 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized5 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized5 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[15]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[14]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[13]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[12]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[11]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[10]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[9]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[8]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized4 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized3 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port d[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port d[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port d[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port d[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port d[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized2 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized1 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized1 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized1 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized1 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized0 has unconnected port we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized0 has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized0 has unconnected port backdoor_clear
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register__parameterized0 has unconnected port d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register has unconnected port re
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register has unconnected port hold
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register has unconnected port backdoor_we
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_g_register has unconnected port backdoor_d[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port areset_clk156
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[20]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[19]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[18]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[17]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[16]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[15]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[14]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[13]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[12]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[11]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[10]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[9]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[8]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port addr[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port rnw
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[15]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[14]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[13]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[12]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[11]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[10]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[9]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[8]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port wdata[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_common_ieee_registers has unconnected port cs
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_ieee_registers has unconnected port kr_pmd_status_core_i[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_ieee_registers has unconnected port kr_pmd_status_core_i[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_pcs_pma_v6_0_13_ieee_registers has unconnected port kr_pmd_status_core_i[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1436.648 ; gain = 171.625 ; free physical = 26768 ; free virtual = 42670
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1436.648 ; gain = 171.625 ; free physical = 26791 ; free virtual = 42692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1436.648 ; gain = 171.625 ; free physical = 26791 ; free virtual = 42692
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:54]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:56]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:58]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:61]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:63]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:65]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:68]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of [filter [all_fanout -flat -endpoints_only -from [get_pins -filter NAME=~*/Q -of_objects [get_cells -hierarchical -filter {NAME =~ *rxratecounter_i*rxusrclk2_en156*}]]] {NAME =~ *WE}]'. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:70]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:71]
+Finished Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ten_gig_eth_pcs_pma_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ten_gig_eth_pcs_pma_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0_clocks.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  MUXCY_L => MUXCY: 44 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1996.250 ; gain = 0.000 ; free physical = 25652 ; free virtual = 41554
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:02:08 . Memory (MB): peak = 1996.250 ; gain = 731.227 ; free physical = 25618 ; free virtual = 41521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1761-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:02:08 . Memory (MB): peak = 1996.250 ; gain = 731.227 ; free physical = 25618 ; free virtual = 41521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:02:08 . Memory (MB): peak = 1996.250 ; gain = 731.227 ; free physical = 25608 ; free virtual = 41510
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "comp_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_5" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_6" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_7" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_8" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_13_idle_delete'
+INFO: [Synth 8-5544] ROM "twist" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_wr_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_rd_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jam_idle" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_code_c0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_code_c4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_13_tx_pcs_fsm'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_13_rx_block_lock_fsm'
+INFO: [Synth 8-5544] ROM "mcp1_test_sh" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_13_rx_ber_mon_fsm'
+INFO: [Synth 8-5544] ROM "mcp1_ber_count_inc" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mcp1_ber_test_sh" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mcp1_hiber" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mcp1_rx_64_ctrl_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mcp1_rx_64_ctrl_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mcp1_rx_64_ctrl_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "IsValidControl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IsValidControl0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IsValidControl1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IsValidControl2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IsValidControl3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IsValidControl4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IsValidControl5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IsValidControl6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "DecodeWord" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord0" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord3" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord4" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord5" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "DecodeWord6" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_13_rx_pcs_fsm'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "err_block_count_inc" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_eq_c_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mcp1_rx_ebuff_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_13_cs_ipif_access'
+INFO: [Synth 8-5544] ROM "ipif_rnw" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "drp_cs" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_13_drp_ipif'
+INFO: [Synth 8-5544] ROM "drp_req" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "den" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "gt_txd_mux" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "gt_txc_mux" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "gearboxslipignorecount" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gearboxslipignore" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cable_pull_watchdog" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "master_watchdog_barking" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                STRAIGHT |                              000 |                              000
+                 DELETE3 |                              001 |                              010
+                 DELETE1 |                              010 |                              001
+                 TWISTED |                              011 |                              100
+        POSSIBLE_DELETE4 |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_13_idle_delete'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 TX_INIT |                              000 |                              000
+                    TX_E |                              001 |                              100
+                    TX_C |                              010 |                              001
+                    TX_D |                              011 |                              010
+                    TX_T |                              100 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_13_tx_pcs_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               LOCK_INIT |                               00 |                               00
+               RESET_CNT |                               01 |                               01
+   TEST_VALID_INVALID_SH |                               10 |                               10
+                    SLIP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_13_rx_block_lock_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             BER_MT_INIT |                              000 |                              000
+             START_TIMER |                              001 |                              001
+             BER_TEST_SH |                              010 |                              010
+              BER_BAD_SH |                              011 |                              011
+                  HI_BER |                              100 |                              100
+                GOOD_BER |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_13_rx_ber_mon_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RX_INIT |                              000 |                              000
+                    RX_E |                              001 |                              100
+                    RX_T |                              010 |                              011
+                    RX_C |                              011 |                              001
+                    RX_D |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_13_rx_pcs_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                  RDREQ1 |                               01 |                              001
+              RDPENDING1 |                               10 |                              010
+                 RDRESP1 |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_13_cs_ipif_access'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                     REQ |                               01 |                               01
+                     GNT |                               10 |                               10
+                    GNT1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_13_drp_ipif'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:02:12 . Memory (MB): peak = 1996.250 ; gain = 731.227 ; free physical = 25496 ; free virtual = 41402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_code_c4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_code_c0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_pcs_i/rx_decoder_i/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_pcs_i/rx_decoder_i/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/IsValidControl6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord0" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord1" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord3" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord4" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord5" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "rx_pcs_i/rx_decoder_i/DecodeWord6" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "rx_pcs_i/rx_decoder_i/mcp1_rx_64_ctrl_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "gt_txc_mux" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "ten_gig_eth_pcs_pma_block_i/master_watchdog_barking" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[5]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[4]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[3]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[2]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[8]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[9]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[7]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_rx_66_enc_reg_reg[6]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/rx_pcs_i/rx_decoder_i/mcp1_block_field_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_reg' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[1]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[2]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o0_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[0]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[1]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[2]' (FDRE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/pcs_top_i/tx_pcs_i/tx_encoder_i/o4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[20]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[19]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[18]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[17]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[16]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[0]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[1]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[2]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[3]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[4]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[5]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[6]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[7]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[9]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[10]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[11]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[12]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[13]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[14]' (FDR) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/management_cs_i/ipif_access_inst/read_addr_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\management_cs_i/ipif_access_inst/read_addr_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[0]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[1]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[2]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[3]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[4]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[5]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[6]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[7]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[8]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[9]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[10]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[11]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[12]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[13]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[14]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\drp_ipif_i/synch_1/d_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\drp_ipif_i/synch_1/d_reg_reg[32] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[0]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[1]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[2]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[3]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[4]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[5]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[6]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[7]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[8]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[9]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[10]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[11]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[12]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[13]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[14]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\ieee_registers_i/common_reg_block/reg_1_8_10/q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\ieee_registers_i/common_reg_block/reg_3_8_11/q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[0]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[1]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[2]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[3]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[4]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[5]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[6]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[7]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[8]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[9]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[10]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[11]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[12]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[13]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[14]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/ipif_wrdata_dclk_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[15]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[16]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[17]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[18]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[19]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[20]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[21]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[22]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[23]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[25]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[26]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[27]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[28]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[29]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[30]' (FD) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/d_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\drp_ipif_i/synch_1/d_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[15]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[16]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[17]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[18]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[19]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[20]' (FDE) to 'inst/ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core/ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/management_inst/drp_ipif_i/synch_1/q_reg[24]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\drp_ipif_i/synch_1/q_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ten_gig_eth_pcs_pma_block_i/ten_gig_eth_pcs_pma_0_core /\ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst /management_inst/\drp_ipif_i/ipif_addr_dclk_reg[15] )
+INFO: [Synth 8-3332] Sequential element (rx_elastic_buffer_i/idle_delete_i/mcp1_input_was_seq_or_idle_reg[0]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_elastic_buffer_wrapper.
+INFO: [Synth 8-3332] Sequential element (management_cs_i/ipif_access_inst/read_addr_reg[15]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_management_top.
+INFO: [Synth 8-3332] Sequential element (ieee_registers_i/common_reg_block/reg_1_8_10/q_reg[0]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_management_top.
+INFO: [Synth 8-3332] Sequential element (ieee_registers_i/common_reg_block/reg_3_8_11/q_reg[0]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_management_top.
+INFO: [Synth 8-3332] Sequential element (drp_ipif_i/synch_1/d_reg_reg[32]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_management_top.
+INFO: [Synth 8-3332] Sequential element (drp_ipif_i/synch_1/d_reg_reg[31]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_management_top.
+INFO: [Synth 8-3332] Sequential element (drp_ipif_i/synch_1/q_reg[31]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_management_top.
+INFO: [Synth 8-3332] Sequential element (drp_ipif_i/ipif_addr_dclk_reg[15]) is unused and will be removed from module ten_gig_eth_pcs_pma_v6_0_13_management_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:02:24 . Memory (MB): peak = 1996.250 ; gain = 731.227 ; free physical = 25863 ; free virtual = 41907
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 76 of /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc. [/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/synth/ten_gig_eth_pcs_pma_0.xdc:76]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:02:35 . Memory (MB): peak = 1996.250 ; gain = 731.227 ; free physical = 25139 ; free virtual = 41072
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:02:41 . Memory (MB): peak = 2023.016 ; gain = 757.992 ; free physical = 24198 ; free virtual = 40130
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:02:43 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23994 ; free virtual = 39927
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5778] max_fanout handling on net \ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rxusrclk2_en156  is sub-optimal because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-4618] Found max_fanout attribute set to 50 on net \ten_gig_eth_pcs_pma_inst/G_IS_BASER.ten_gig_eth_pcs_pma_inst/BASER.ten_gig_eth_pcs_pma_inst/rxusrclk2_en156 . Fanout reduced from 697 to 155 by creating 11 replicas.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:02:43 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23933 ; free virtual = 39865
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:02:43 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23933 ; free virtual = 39865
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:02:44 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23917 ; free virtual = 39849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:02:44 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23917 ; free virtual = 39849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:02:44 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23901 ; free virtual = 39833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:02:44 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23913 ; free virtual = 39845
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     2|
+|2     |BUFH          |     1|
+|3     |CARRY4        |    54|
+|4     |GTHE2_CHANNEL |     1|
+|5     |GTHE2_COMMON  |     1|
+|6     |IBUFDS_GTE2   |     1|
+|7     |LUT1          |   117|
+|8     |LUT2          |   261|
+|9     |LUT3          |   375|
+|10    |LUT4          |   360|
+|11    |LUT5          |   306|
+|12    |LUT6          |   835|
+|13    |MUXCY_L       |    44|
+|14    |MUXF7         |     1|
+|15    |RAM32M        |    24|
+|16    |FDCE          |    21|
+|17    |FDPE          |    77|
+|18    |FDRE          |  2621|
+|19    |FDSE          |   198|
+|20    |LDCE          |     1|
+|21    |IBUF          |     2|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:02:44 . Memory (MB): peak = 2045.047 ; gain = 780.023 ; free physical = 23913 ; free virtual = 39845
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1071 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 2045.047 ; gain = 220.422 ; free physical = 23970 ; free virtual = 39903
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:02:44 . Memory (MB): peak = 2045.055 ; gain = 780.023 ; free physical = 23977 ; free virtual = 39910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 40 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+329 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:02:46 . Memory (MB): peak = 2077.062 ; gain = 812.039 ; free physical = 23791 ; free virtual = 39724
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/ten_gig_eth_pcs_pma_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.srcs/sources_1/ip/ten_gig_eth_pcs_pma_0/ten_gig_eth_pcs_pma_0.xci
+INFO: [Coretcl 2-1174] Renamed 144 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.runs/ten_gig_eth_pcs_pma_0_synth_1/ten_gig_eth_pcs_pma_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ten_gig_eth_pcs_pma_0_utilization_synth.rpt -pb ten_gig_eth_pcs_pma_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.66 . Memory (MB): peak = 2101.074 ; gain = 0.000 ; free physical = 23764 ; free virtual = 39708
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 27 09:18:35 2025...

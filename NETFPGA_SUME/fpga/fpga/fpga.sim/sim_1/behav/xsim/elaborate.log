@@ -1,0 +1,23 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto a3f0dfecd2704f04afe20cd4c63b7646 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_ldpc_multi_packet_test_behav xil_defaultlib.tb_ldpc_multi_packet_test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_axis_tid [/home/hassan/Downloads/verilog-ethernet/rtl/eth_mac_10g_fifo.v:411]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_axis_tdest [/home/hassan/Downloads/verilog-ethernet/rtl/eth_mac_10g_fifo.v:412]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_axis_tid [/home/hassan/Downloads/verilog-ethernet/rtl/eth_mac_10g_fifo.v:463]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_axis_tdest [/home/hassan/Downloads/verilog-ethernet/rtl/eth_mac_10g_fifo.v:464]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 96 for port s_eth_dest_mac [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:387]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 96 for port s_eth_src_mac [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:388]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_ip_version [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:390]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_ip_ihl [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:391]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 6 for port s_ip_flags [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:396]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 26 for port s_ip_fragment_offset [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:397]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port s_ip_payload_axis_tid [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:408]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port s_ip_payload_axis_tdest [/home/hassan/Downloads/verilog-ethernet/rtl/udp_complete_64.v:409]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port s_eth_payload_axis_tid [/home/hassan/Downloads/verilog-ethernet/rtl/ip_complete_64.v:293]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port s_eth_payload_axis_tdest [/home/hassan/Downloads/verilog-ethernet/rtl/ip_complete_64.v:294]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_axis_tid [/home/hassan/Downloads/verilog-ethernet/rtl/udp_checksum_gen_64.v:229]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port s_axis_tdest [/home/hassan/Downloads/verilog-ethernet/rtl/udp_checksum_gen_64.v:230]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

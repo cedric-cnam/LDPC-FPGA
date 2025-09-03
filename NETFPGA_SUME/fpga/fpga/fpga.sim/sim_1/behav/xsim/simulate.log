@@ -1,0 +1,28 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+=================================================================
+FPGA CORE MULTI-PACKET TEST - NO EXTERNAL RESET
+Testing internal reset mechanism for hardware deployment
+Simulating Python script sending 5 packets consecutively
+=================================================================
+[100000] ⚡ Initial reset released - NO MORE RESETS!
+[10100000] System ready, clocks stable
+[10100000] Pre-populating ARP cache for UDP communications
+[10100000] 📨 Injecting ARP response for network setup
+[10218000] ✅ ARP response sent
+[210218000] Starting multi-packet test sequence (NO EXTERNAL RESET)
+[210218000] This simulates your Python script behavior in hardware
+[320112000] 🚀 Starting multi-packet test (NO EXTERNAL RESET)
+[384125000] 📤 Starting packet 0 (relying on internal reset only)
+[384131000] 📦 Packet 0 sent, waiting for internal reset + decode
+[384131000] === Injecting Complete UDP Packet 0 (NO EXTERNAL RESET) ===
+[384771000] Step 1: Injecting Ethernet + IP + UDP headers
+[384803000] Step 2: Injecting UDP payload (600 words)
+[384810000] PKT[0] Payload[0]: f0ffff00ff0fffff  <FIRST>       
+[384816000] PKT[0] Payload[1]: 0ff0ff0ff0ffff0f                
+[384822000] PKT[0] Payload[2]: 0f0000000ff0fff0                
+[388630000] PKT[0] Payload[597]: f00ffff00ff0f0ff                
+[388637000] PKT[0] Payload[598]: ff0fff00ff000000                
+[388643000] PKT[0] Payload[599]: 00000f0f0fff0f0f          <LAST>
+[388643000] Step 3: Ending Ethernet frame
+[388650000] ✅ Complete UDP Packet 0 injection finished

@@ -1,0 +1,24 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/HDL_Algorithm_pkg.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/AposterioriUnit.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/BarrelRotator.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/BetaCalculationUnit.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/BetaDecompress.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/FinalShifts.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/CheckMatrixLUT.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/SimpleDualPortRAM_generic.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/CheckNodeRAM.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/CheckNodeUnit.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/CodeParameters.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/SerialCircularShifter.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/VariableNodeUnit.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/FunctionalUnit.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/MetricCalculator.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/FinalDecision.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/DecoderCore.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/NR_LDPC_Decoder.vhd" \
+"../../../../../../../../../../snap/snapd-desktop-integration/253/Desktop/NRLDPCDecoderHDL/HDL_Algorithm.vhd" \
+
+# Do not sort compile order
+nosort

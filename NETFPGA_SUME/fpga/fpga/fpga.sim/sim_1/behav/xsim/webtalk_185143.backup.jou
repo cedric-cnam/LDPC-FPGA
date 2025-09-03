@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jun 27 13:55:32 2025
+# Process ID: 185143
+# Current directory: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.sim/sim_1/behav/xsim/xsim.dir/tb_fpga_core_multi_packet_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/hassan/Downloads/verilog-ethernet/example/NetFPGA_SUME/fpga/fpga/fpga.sim/sim_1/behav/xsim/xsim.dir/tb_fpga_core_multi_packet_behav/webtalk/xsim_webtalk.tcl -notrace
