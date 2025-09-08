@@ -60,7 +60,7 @@ LDPC-FPGA/
 
 ## 📜 License
 
-This project is licensed under the GNU GPL v3 (or later).  
+This project is licensed under the GNU GPL v3.  
 See the [LICENSE](LICENSE) file for details.
 
 ---
