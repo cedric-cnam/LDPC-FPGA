@@ -61,7 +61,7 @@ LDPC-FPGA/
 ## 📜 License
 
 This project is licensed under the GNU GPL v3.  
-See the [LICENSE](LICENSE) file for details.
+See the [LICENSE](https://github.com/cedric-cnam/LDPC-FPGA/blob/main/NETFPGA_SUME/LICENSE) file for details.
 
 ---
 
