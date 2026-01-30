@@ -1,0 +1,131 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 73940
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Dec 04 16:21:39 CET 2025
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 6.8.0-87-generic
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: fpga:11.0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/storage/mario/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/storage/mario/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	hassan
+User home directory: /home/hassan
+User working directory: /home/hassan/Downloads/verilog-ethernet/example/Alveo/fpga_25g/fpga_AU200_10g
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /storage/mario/Vivado
+HDI_APPROOT: /storage/mario/Vivado/2020.2
+RDI_DATADIR: /storage/mario/Vivado/2020.2/data
+RDI_BINDIR: /storage/mario/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/hassan/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/hassan/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/hassan/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/storage/mario/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/hassan/Downloads/verilog-ethernet/example/Alveo/fpga_25g/fpga_AU200_10g/vivado.log
+Vivado journal file location: 	/home/hassan/Downloads/verilog-ethernet/example/Alveo/fpga_25g/fpga_AU200_10g/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-73940-fpga
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /storage/mario/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /storage/mario/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /storage/mario/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /storage/mario/Vivado/2020.2
+XILINX_VITIS: 
+XILINX_VIVADO: /storage/mario/Vivado/2020.2
+XILINX_VIVADO_HLS: /storage/mario/Vivado/2020.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,544 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 80 MB (+81189kb) [00:00:05]
+// [Engine Memory]: 1,531 MB (+1453496kb) [00:00:05]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: fpga.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project fpga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,554 MB. GUI used memory: 50 MB. Current time: 12/4/25, 4:21:40 PM CET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+15150kb) [00:00:12]
+// [GUI Memory]: 108 MB (+5156kb) [00:00:12]
+// [Engine Memory]: 1,621 MB (+14264kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  1892 ms.
+// Tcl Message: open_project fpga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/storage/mario/Vivado/2020.2/data/ip'. 
+// Project name: fpga; location: /home/hassan/Downloads/verilog-ethernet/example/Alveo/fpga_25g/fpga_AU200_10g; part: xcu200-fsgd2104-2-e
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 7382.543 ; gain = 79.156 ; free physical = 52981 ; free virtual = 63636 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 138 MB (+25634kb) [00:00:19]
+// [GUI Memory]: 154 MB (+9494kb) [00:00:21]
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga (fpga_au200.v)]", 2); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fpga (fpga_au200.v), core_inst : fpga_core (fpga_core.v)]", 7); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,689 MB. GUI used memory: 82 MB. Current time: 12/4/25, 4:51:40 PM CET
