@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 30 18:06:24 2026
+# Process ID: 14657
+# Current directory: /home/ryuk/LDPC_testbed/ldpc_testbed
+# Command line: wbtcv -mode batch -source /home/ryuk/LDPC_testbed/ldpc_testbed/.Xil/Vivado-14358-ryuk-MS-7B23/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /home/ryuk/LDPC_testbed/ldpc_testbed/webtalk.log
+# Journal file: /home/ryuk/LDPC_testbed/ldpc_testbed/webtalk.jou
+#-----------------------------------------------------------
+source /home/ryuk/LDPC_testbed/ldpc_testbed/.Xil/Vivado-14358-ryuk-MS-7B23/webtalk/labtool_webtalk.tcl -notrace

@@ -1,0 +1,118 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 30 18:05:48 2026
+# Process ID: 14358
+# Current directory: /home/ryuk/LDPC_testbed/ldpc_testbed
+# Command line: vivado -mode batch -source /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl -tclargs /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+# Log file: /home/ryuk/LDPC_testbed/ldpc_testbed/vivado.log
+# Journal file: /home/ryuk/LDPC_testbed/ldpc_testbed/vivado.jou
+#-----------------------------------------------------------
+source /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+# if { $argc != 1 } {
+#     puts "ERROR: Bitfile path not provided"
+#     puts "Usage: vivado -mode batch -source program_fpga.tcl -tclargs <bitfile_path>"
+#     exit 1
+# }
+# set bitfile_path [lindex $argv 0]
+# if { ![file exists $bitfile_path] } {
+#     puts "ERROR: Bitfile not found: $bitfile_path"
+#     exit 1
+# }
+# puts "=========================================="
+==========================================
+# puts "LDPC FPGA Programming"
+LDPC FPGA Programming
+# puts "=========================================="
+==========================================
+# puts "Bitfile: $bitfile_path"
+Bitfile: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+# puts ""
+
+# puts "Opening Hardware Manager..."
+Opening Hardware Manager...
+# open_hw_manager
+# puts "Connecting to hardware server..."
+Connecting to hardware server...
+# connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+# puts "Opening hardware target..."
+Opening hardware target...
+# open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/2130079CA08FA
+# puts "Getting FPGA device..."
+Getting FPGA device...
+# set dev [lindex [get_hw_devices] 0]
+# if { $dev == "" } {
+#     puts "ERROR: No FPGA device found"
+#     close_hw_manager
+#     exit 1
+# }
+# puts "Using device: $dev"
+Using device: xcu200_0
+# current_hw_device $dev
+# refresh_hw_device $dev
+INFO: [Labtools 27-2302] Device xcu200 (JTAG device index = 0) is programmed with a design that has 3 ILA core(s).
+WARNING: [Labtools 27-1347] Unable to find Debug Probes file []. Please update hw_device property [PROBES.FILE]
+ Update of hw_probe objects, will be skipped.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xcu200_0 and the probes file(s) .
+The device design has 3 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+# puts ""
+
+# puts "Programming FPGA with: $bitfile_path"
+Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+# puts "This may take 30-60 seconds..."
+This may take 30-60 seconds...
+# puts ""
+
+# set_property PROGRAM.FILE $bitfile_path $dev
+# program_hw_devices $dev
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 3106.363 ; gain = 9.004 ; free physical = 19309 ; free virtual = 24377
+# puts ""
+
+# puts "=========================================="
+==========================================
+# puts "FPGA Programming Complete"
+FPGA Programming Complete
+# puts "=========================================="
+==========================================
+# puts "Device: $dev"
+Device: xcu200_0
+# puts "Bitfile: $bitfile_path"
+Bitfile: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+# puts ""
+
+# puts "STATUS: SUCCESS - FPGA programmed successfully"
+STATUS: SUCCESS - FPGA programmed successfully
+# close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Xilinx/2130079CA08FA
+# disconnect_hw_server
+# close_hw_manager
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/ryuk/LDPC_testbed/ldpc_testbed/.Xil/Vivado-14358-ryuk-MS-7B23/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan 30 18:06:24 2026...
+# puts "Hardware Manager closed"
+Hardware Manager closed
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 30 18:06:24 2026...

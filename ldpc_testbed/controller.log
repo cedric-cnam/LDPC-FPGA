@@ -1,0 +1,374 @@
+2026-01-30 16:37:59,448 - __main__ - ERROR - Fatal error: Vivado not found at: /tools/Xilinx/Vivado/2023.2/bin/vivado
+2026-01-30 16:39:29,942 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 16:39:29,943 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 16:39:29,943 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 16:39:29,943 - __main__ - INFO - Controller initialized
+2026-01-30 16:39:29,943 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 16:39:29,943 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 16:39:29,943 - __main__ - INFO - Starting controller server...
+2026-01-30 16:39:29,943 - __main__ - INFO - Sockets ready
+2026-01-30 16:39:29,943 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 16:39:29,965 - __main__ - ERROR - Hardware server not found. Start with: hw_server
+2026-01-30 16:39:29,965 - __main__ - ERROR - Start hardware server with: hw_server
+2026-01-30 16:39:29,965 - __main__ - ERROR - Failed to start controller
+2026-01-30 16:48:36,938 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 16:48:36,938 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 16:48:36,938 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 16:48:36,938 - __main__ - INFO - Controller initialized
+2026-01-30 16:48:36,938 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 16:48:36,938 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 16:48:36,939 - __main__ - INFO - Starting controller server...
+2026-01-30 16:48:36,939 - __main__ - INFO - Sockets ready
+2026-01-30 16:48:36,939 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 16:48:36,961 - __main__ - INFO - Hardware server is running
+2026-01-30 16:48:36,961 - __main__ - INFO - Control loop started
+2026-01-30 16:48:36,962 - __main__ - INFO - Monitor loop started
+2026-01-30 16:48:36,962 - __main__ - INFO - ✅ Controller server started
+2026-01-30 16:49:47,310 - __main__ - INFO - Client connected: ('192.168.1.1', 60228)
+2026-01-30 16:49:47,312 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 60228)
+2026-01-30 16:49:47,313 - __main__ - INFO - Task request: 70b3d5ef (Z=96)
+2026-01-30 16:49:47,313 - __main__ - INFO - Processing task: 70b3d5ef
+2026-01-30 16:49:47,313 - __main__ - ERROR - Task processing error: Bitfile not found for Z=96
+2026-01-30 16:54:05,135 - __main__ - INFO - Client connected: ('192.168.1.1', 38986)
+2026-01-30 16:54:05,137 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 38986)
+2026-01-30 16:54:05,137 - __main__ - INFO - Task request: 18aa4075 (Z=96)
+2026-01-30 16:54:05,137 - __main__ - INFO - Processing task: 18aa4075
+2026-01-30 16:54:05,138 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 16:54:05,138 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 16:54:05,138 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 16:54:52,080 - fpga_programmer.fpga_programmer - WARNING - Vivado stderr:
+2026-01-30 16:54:52,080 - fpga_programmer.fpga_programmer - WARNING -   ERROR: [Labtoolstcl 44-56] hw_device [xcu200_0] does not have a [PROGRAM.DONE] property
+2026-01-30 16:54:52,080 - fpga_programmer.fpga_programmer - ERROR - Programming failed with code 1
+2026-01-30 16:54:52,080 - __main__ - ERROR - Task processing error: FPGA programming failed: Programming failed with code 1
+2026-01-30 16:56:01,567 - __main__ - INFO - Client connected: ('192.168.1.1', 49994)
+2026-01-30 16:56:01,569 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 49994)
+2026-01-30 16:56:01,569 - __main__ - INFO - Task request: 3188b6c7 (Z=96)
+2026-01-30 16:56:01,569 - __main__ - INFO - Processing task: 3188b6c7
+2026-01-30 16:56:01,569 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 16:56:01,569 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 16:56:01,569 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 16:56:48,396 - fpga_programmer.fpga_programmer - WARNING - Vivado stderr:
+2026-01-30 16:56:48,396 - fpga_programmer.fpga_programmer - WARNING -   ERROR: [Labtoolstcl 44-56] hw_device [xcu200_0] does not have a [PROGRAM.DONE] property
+2026-01-30 16:56:48,396 - fpga_programmer.fpga_programmer - ERROR - Programming failed with code 1
+2026-01-30 16:56:48,396 - __main__ - ERROR - Task processing error: FPGA programming failed: Programming failed with code 1
+2026-01-30 17:00:07,897 - __main__ - INFO - Client connected: ('192.168.1.1', 49980)
+2026-01-30 17:00:07,898 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 49980)
+2026-01-30 17:00:07,899 - __main__ - INFO - Task request: 987e7e96 (Z=96)
+2026-01-30 17:00:07,899 - __main__ - INFO - Processing task: 987e7e96
+2026-01-30 17:00:07,899 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:00:07,899 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:00:07,899 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:00:19,165 - __main__ - INFO - Stopping controller...
+2026-01-30 17:00:19,165 - __main__ - INFO - Controller stopped
+2026-01-30 17:02:26,881 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:02:26,881 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:02:26,881 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:02:26,881 - __main__ - INFO - Controller initialized
+2026-01-30 17:02:26,881 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:02:26,881 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:02:26,881 - __main__ - INFO - Starting controller server...
+2026-01-30 17:02:26,881 - __main__ - INFO - Sockets ready
+2026-01-30 17:02:26,881 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:02:26,904 - __main__ - ERROR - Hardware server not found. Start with: hw_server
+2026-01-30 17:02:26,904 - __main__ - ERROR - Start hardware server with: hw_server
+2026-01-30 17:02:26,904 - __main__ - ERROR - Failed to start controller
+2026-01-30 17:18:16,186 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:18:16,186 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:18:16,186 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:18:16,186 - __main__ - INFO - Controller initialized
+2026-01-30 17:18:16,186 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:18:16,186 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:18:16,186 - __main__ - INFO - Starting controller server...
+2026-01-30 17:18:16,186 - __main__ - ERROR - Socket setup failed: [Errno 99] Cannot assign requested address
+2026-01-30 17:18:16,186 - __main__ - ERROR - Failed to start controller
+2026-01-30 17:21:04,501 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:21:04,501 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:21:04,501 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:21:04,501 - __main__ - INFO - Controller initialized
+2026-01-30 17:21:04,501 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:21:04,501 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:21:04,501 - __main__ - INFO - Starting controller server...
+2026-01-30 17:21:04,502 - __main__ - INFO - Sockets ready
+2026-01-30 17:21:04,502 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:21:04,522 - __main__ - INFO - Hardware server is running
+2026-01-30 17:21:04,523 - __main__ - INFO - Control loop started
+2026-01-30 17:21:04,523 - __main__ - INFO - Monitor loop started
+2026-01-30 17:21:04,523 - __main__ - INFO - ✅ Controller server started
+2026-01-30 17:23:10,652 - __main__ - INFO - Client connected: ('192.168.1.1', 38790)
+2026-01-30 17:23:10,654 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 38790)
+2026-01-30 17:23:10,654 - __main__ - INFO - Task request: cff6f302 (Z=96)
+2026-01-30 17:23:10,655 - __main__ - INFO - Processing task: cff6f302
+2026-01-30 17:23:10,655 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:23:10,655 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:23:10,655 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:23:48,170 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.5s
+2026-01-30 17:23:48,170 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:23:48,170 - __main__ - ERROR - Task processing error: [Errno 9] Bad file descriptor
+2026-01-30 17:25:11,703 - __main__ - INFO - Client connected: ('192.168.1.1', 36306)
+2026-01-30 17:25:11,704 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 36306)
+2026-01-30 17:25:11,704 - __main__ - INFO - Task request: d60ea2b1 (Z=96)
+2026-01-30 17:25:11,704 - __main__ - INFO - Processing task: d60ea2b1
+2026-01-30 17:25:11,705 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:25:11,705 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:25:11,705 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:25:15,113 - __main__ - INFO - Stopping controller...
+2026-01-30 17:25:15,113 - __main__ - INFO - Controller stopped
+2026-01-30 17:25:20,909 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:25:20,909 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:25:20,909 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:25:20,909 - __main__ - INFO - Controller initialized
+2026-01-30 17:25:20,910 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:25:20,910 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:25:20,910 - __main__ - INFO - Starting controller server...
+2026-01-30 17:25:20,910 - __main__ - INFO - Sockets ready
+2026-01-30 17:25:20,910 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:25:20,933 - __main__ - INFO - Hardware server is running
+2026-01-30 17:25:20,934 - __main__ - INFO - Control loop started
+2026-01-30 17:25:20,934 - __main__ - INFO - Monitor loop started
+2026-01-30 17:25:20,934 - __main__ - INFO - ✅ Controller server started
+2026-01-30 17:25:28,174 - __main__ - INFO - Client connected: ('192.168.1.1', 43528)
+2026-01-30 17:25:28,176 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 43528)
+2026-01-30 17:25:28,176 - __main__ - INFO - Task request: 1647675e (Z=96)
+2026-01-30 17:25:28,177 - __main__ - INFO - Processing task: 1647675e
+2026-01-30 17:25:28,177 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:25:28,177 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:25:28,177 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:26:05,605 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.4s
+2026-01-30 17:26:05,605 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:26:05,605 - __main__ - ERROR - Task processing error: [Errno 9] Bad file descriptor
+2026-01-30 17:26:28,180 - __main__ - INFO - Client connected: ('192.168.1.1', 55764)
+2026-01-30 17:26:28,181 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 55764)
+2026-01-30 17:26:28,181 - __main__ - INFO - Task request: 1c22b512 (Z=96)
+2026-01-30 17:26:28,182 - __main__ - INFO - Processing task: 1c22b512
+2026-01-30 17:26:28,182 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:26:28,182 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:26:28,182 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:27:05,425 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.2s
+2026-01-30 17:27:05,425 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:27:05,425 - __main__ - ERROR - Task processing error: [Errno 9] Bad file descriptor
+2026-01-30 17:33:19,716 - __main__ - INFO - Stopping controller...
+2026-01-30 17:33:19,717 - __main__ - INFO - Controller stopped
+2026-01-30 17:33:23,797 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:33:23,797 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:33:23,797 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:33:23,797 - __main__ - INFO - Controller initialized
+2026-01-30 17:33:23,797 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:33:23,797 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:33:23,797 - __main__ - INFO - Starting controller server...
+2026-01-30 17:33:23,797 - __main__ - INFO - Sockets ready
+2026-01-30 17:33:23,797 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:33:23,819 - __main__ - INFO - Hardware server is running
+2026-01-30 17:33:23,820 - __main__ - INFO - Control loop started
+2026-01-30 17:33:23,820 - __main__ - INFO - Monitor loop started
+2026-01-30 17:33:23,821 - __main__ - INFO - ✅ Controller server started
+2026-01-30 17:33:27,421 - __main__ - INFO - Client connected: ('192.168.1.1', 54578)
+2026-01-30 17:33:27,422 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 54578)
+2026-01-30 17:33:27,422 - __main__ - INFO - Task request: 78eac6c2 (Z=96)
+2026-01-30 17:33:27,423 - __main__ - INFO - Processing task: 78eac6c2
+2026-01-30 17:33:27,423 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:33:27,423 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:33:27,423 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:34:04,611 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.2s
+2026-01-30 17:34:04,611 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:34:04,611 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:34:05,611 - __main__ - INFO - Task completed: 78eac6c2
+2026-01-30 17:35:47,014 - __main__ - INFO - Client connected: ('192.168.1.1', 38668)
+2026-01-30 17:35:47,016 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 38668)
+2026-01-30 17:35:47,016 - __main__ - INFO - Task request: 8b1396b6 (Z=96)
+2026-01-30 17:35:47,016 - __main__ - INFO - Processing task: 8b1396b6
+2026-01-30 17:35:47,016 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:35:47,016 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:35:47,016 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:36:24,900 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.9s
+2026-01-30 17:36:24,900 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:36:24,900 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:36:25,900 - __main__ - INFO - Task completed: 8b1396b6
+2026-01-30 17:38:56,286 - __main__ - INFO - Client connected: ('192.168.1.1', 44870)
+2026-01-30 17:38:56,287 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 44870)
+2026-01-30 17:38:56,287 - __main__ - INFO - Task request: 7c389c13 (Z=96)
+2026-01-30 17:38:56,288 - __main__ - INFO - Processing task: 7c389c13
+2026-01-30 17:38:56,288 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:38:56,288 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:38:56,288 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:39:04,257 - __main__ - INFO - Stopping controller...
+2026-01-30 17:39:04,257 - __main__ - INFO - Controller stopped
+2026-01-30 17:39:11,373 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:39:11,373 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:39:11,373 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:39:11,373 - __main__ - INFO - Controller initialized
+2026-01-30 17:39:11,373 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:39:11,373 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:39:11,373 - __main__ - INFO - Starting controller server...
+2026-01-30 17:39:11,373 - __main__ - INFO - Sockets ready
+2026-01-30 17:39:11,373 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:39:11,396 - __main__ - INFO - Hardware server is running
+2026-01-30 17:39:11,397 - __main__ - INFO - Control loop started
+2026-01-30 17:39:11,397 - __main__ - INFO - Monitor loop started
+2026-01-30 17:39:11,397 - __main__ - INFO - ✅ Controller server started
+2026-01-30 17:39:14,599 - __main__ - INFO - Client connected: ('192.168.1.1', 47968)
+2026-01-30 17:39:14,600 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 47968)
+2026-01-30 17:39:14,600 - __main__ - INFO - Task request: 2a34bf5d (Z=96)
+2026-01-30 17:39:14,601 - __main__ - ERROR - Monitor loop error: 'ControllerServer' object has no attribute '_process_task'
+2026-01-30 17:43:12,494 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:43:12,494 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:43:12,494 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:43:12,494 - __main__ - INFO - Controller initialized
+2026-01-30 17:43:12,494 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:43:12,494 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:43:12,494 - __main__ - INFO - Starting controller server...
+2026-01-30 17:43:12,494 - __main__ - INFO - Sockets ready
+2026-01-30 17:43:12,494 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:43:12,517 - __main__ - INFO - Hardware server is running
+2026-01-30 17:43:12,518 - __main__ - INFO - Control loop started
+2026-01-30 17:43:12,518 - __main__ - INFO - Monitor loop started
+2026-01-30 17:43:12,518 - __main__ - INFO - ✅ Controller server started
+2026-01-30 17:43:15,607 - __main__ - INFO - Client connected: ('192.168.1.1', 35994)
+2026-01-30 17:43:15,609 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 35994)
+2026-01-30 17:43:15,609 - __main__ - INFO - Task request: 227e5621 (Z=96)
+2026-01-30 17:43:15,609 - __main__ - INFO - Processing task: 227e5621
+2026-01-30 17:43:15,610 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:43:15,610 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit
+2026-01-30 17:43:15,610 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:43:52,888 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.3s
+2026-01-30 17:43:52,888 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:43:52,888 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:43:53,888 - __main__ - INFO - Task completed: 227e5621
+2026-01-30 17:43:55,510 - __main__ - INFO - Client connected: ('192.168.1.1', 44658)
+2026-01-30 17:43:55,511 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 44658)
+2026-01-30 17:43:55,511 - __main__ - INFO - Task request: 06c39e4f (Z=96)
+2026-01-30 17:43:55,512 - __main__ - INFO - Processing task: 06c39e4f
+2026-01-30 17:43:55,512 - __main__ - INFO - FPGA already programmed with /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z96.bit, skipping programming
+2026-01-30 17:43:55,512 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:43:56,512 - __main__ - INFO - Task completed: 06c39e4f
+2026-01-30 17:44:23,722 - __main__ - INFO - Client connected: ('192.168.1.1', 48856)
+2026-01-30 17:44:23,725 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 48856)
+2026-01-30 17:44:23,725 - __main__ - INFO - Task request: bed4f9d8 (Z=192)
+2026-01-30 17:44:23,727 - __main__ - INFO - Processing task: bed4f9d8
+2026-01-30 17:44:23,727 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z192.bit
+2026-01-30 17:44:23,727 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z192.bit
+2026-01-30 17:44:23,727 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:45:01,049 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.3s
+2026-01-30 17:45:01,049 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:45:01,049 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:45:02,049 - __main__ - INFO - Task completed: bed4f9d8
+2026-01-30 17:45:56,670 - __main__ - INFO - Client connected: ('192.168.1.1', 45674)
+2026-01-30 17:45:56,675 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 45674)
+2026-01-30 17:45:56,675 - __main__ - INFO - Task request: 8695f5c7 (Z=192)
+2026-01-30 17:45:56,676 - __main__ - INFO - Processing task: 8695f5c7
+2026-01-30 17:45:56,676 - __main__ - INFO - FPGA already programmed with /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z192.bit, skipping programming
+2026-01-30 17:45:56,676 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:45:57,676 - __main__ - INFO - Task completed: 8695f5c7
+2026-01-30 17:48:43,310 - __main__ - INFO - Client connected: ('192.168.1.1', 39826)
+2026-01-30 17:48:43,311 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 39826)
+2026-01-30 17:48:43,311 - __main__ - INFO - Task request: 7916dfae (Z=48)
+2026-01-30 17:48:43,312 - __main__ - INFO - Processing task: 7916dfae
+2026-01-30 17:48:43,312 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+2026-01-30 17:48:43,312 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+2026-01-30 17:48:43,312 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:49:21,511 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 38.2s
+2026-01-30 17:49:21,512 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:49:21,512 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:49:22,512 - __main__ - INFO - Task completed: 7916dfae
+2026-01-30 17:49:33,073 - __main__ - INFO - Stopping controller...
+2026-01-30 17:49:33,073 - __main__ - INFO - Controller stopped
+2026-01-30 17:49:34,720 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:49:34,720 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:49:34,720 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:49:34,720 - __main__ - INFO - Controller initialized
+2026-01-30 17:49:34,720 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:49:34,720 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:49:34,720 - __main__ - INFO - Starting controller server...
+2026-01-30 17:49:34,720 - __main__ - INFO - Sockets ready
+2026-01-30 17:49:34,720 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:49:34,744 - __main__ - INFO - Hardware server is running
+2026-01-30 17:49:34,744 - __main__ - INFO - Control loop started
+2026-01-30 17:49:34,744 - __main__ - INFO - Monitor loop started
+2026-01-30 17:49:34,744 - __main__ - INFO - ✅ Controller server started
+2026-01-30 17:49:40,065 - __main__ - INFO - Client connected: ('192.168.1.1', 58800)
+2026-01-30 17:49:40,067 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 58800)
+2026-01-30 17:49:40,067 - __main__ - INFO - Task request: ed7f2afd (Z=192)
+2026-01-30 17:49:40,068 - __main__ - INFO - Processing task: ed7f2afd
+2026-01-30 17:49:40,068 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z192.bit
+2026-01-30 17:49:40,068 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z192.bit
+2026-01-30 17:49:40,068 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:50:17,141 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.1s
+2026-01-30 17:50:17,141 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:50:17,141 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:50:18,142 - __main__ - INFO - Task completed: ed7f2afd
+2026-01-30 17:50:27,016 - __main__ - INFO - Client connected: ('192.168.1.1', 46688)
+2026-01-30 17:50:27,019 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 46688)
+2026-01-30 17:50:27,019 - __main__ - INFO - Task request: cf3f3b8e (Z=192)
+2026-01-30 17:50:27,019 - __main__ - INFO - Processing task: cf3f3b8e
+2026-01-30 17:50:27,019 - __main__ - INFO - FPGA already programmed with /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z192.bit, skipping programming
+2026-01-30 17:50:27,020 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:50:28,020 - __main__ - INFO - Task completed: cf3f3b8e
+2026-01-30 17:55:39,682 - __main__ - INFO - Stopping controller...
+2026-01-30 17:55:39,682 - __main__ - INFO - Controller stopped
+2026-01-30 17:55:43,526 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 17:55:43,526 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 17:55:43,526 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 17:55:43,527 - __main__ - INFO - Controller initialized
+2026-01-30 17:55:43,527 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 17:55:43,527 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 17:55:43,527 - __main__ - INFO - Starting controller server...
+2026-01-30 17:55:43,527 - __main__ - INFO - Sockets ready
+2026-01-30 17:55:43,527 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 17:55:43,550 - __main__ - INFO - Hardware server is running
+2026-01-30 17:55:43,550 - __main__ - INFO - Control loop started
+2026-01-30 17:55:43,550 - __main__ - INFO - Monitor loop started
+2026-01-30 17:55:43,551 - __main__ - INFO - ✅ Controller server started
+2026-01-30 17:55:48,231 - __main__ - INFO - Client connected: ('192.168.1.1', 53470)
+2026-01-30 17:55:48,232 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 53470)
+2026-01-30 17:55:48,232 - __main__ - INFO - Task request: 06216612 (Z=48)
+2026-01-30 17:55:48,233 - __main__ - INFO - Processing task: 06216612
+2026-01-30 17:55:48,233 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+2026-01-30 17:55:48,233 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+2026-01-30 17:55:48,233 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 17:56:26,131 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.9s
+2026-01-30 17:56:26,131 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 17:56:26,132 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:56:26,132 - __main__ - INFO - ⏱️  Programming time: 37898.51 ms
+2026-01-30 17:56:27,132 - __main__ - INFO - Task completed: 06216612
+2026-01-30 17:56:38,486 - __main__ - INFO - Client connected: ('192.168.1.1', 33118)
+2026-01-30 17:56:38,487 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 33118)
+2026-01-30 17:56:38,487 - __main__ - INFO - Task request: 657df9b2 (Z=48)
+2026-01-30 17:56:38,487 - __main__ - INFO - Processing task: 657df9b2
+2026-01-30 17:56:38,487 - __main__ - INFO - FPGA already programmed with /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit, skipping programming
+2026-01-30 17:56:38,487 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 17:56:38,487 - __main__ - INFO - ⏱️  Programming time: 0.00 ms
+2026-01-30 17:56:39,488 - __main__ - INFO - Task completed: 657df9b2
+2026-01-30 18:05:43,825 - __main__ - INFO - Stopping controller...
+2026-01-30 18:05:43,826 - __main__ - INFO - Controller stopped
+2026-01-30 18:05:44,935 - fpga_programmer.fpga_programmer - INFO - FPGA Programmer initialized
+2026-01-30 18:05:44,935 - fpga_programmer.fpga_programmer - INFO -   Vivado: /home/ryuk/Xilinx2/Vivado/2020.2/bin/vivado
+2026-01-30 18:05:44,935 - fpga_programmer.fpga_programmer - INFO -   TCL Script: /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
+2026-01-30 18:05:44,935 - __main__ - INFO - Controller initialized
+2026-01-30 18:05:44,935 - __main__ - INFO -   Control: 192.168.1.1:8000
+2026-01-30 18:05:44,935 - __main__ - INFO -   Data: 192.168.1.1:5000
+2026-01-30 18:05:44,935 - __main__ - INFO - Starting controller server...
+2026-01-30 18:05:44,935 - __main__ - INFO - Sockets ready
+2026-01-30 18:05:44,935 - __main__ - INFO - Verifying Vivado hardware server...
+2026-01-30 18:05:44,959 - __main__ - INFO - Hardware server is running
+2026-01-30 18:05:44,960 - __main__ - INFO - Control loop started
+2026-01-30 18:05:44,960 - __main__ - INFO - Monitor loop started
+2026-01-30 18:05:44,960 - __main__ - INFO - ✅ Controller server started
+2026-01-30 18:05:47,439 - __main__ - INFO - Client connected: ('192.168.1.1', 50724)
+2026-01-30 18:05:47,439 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 50724)
+2026-01-30 18:05:47,440 - __main__ - INFO - Task request: 8e3ebffa (Z=48)
+2026-01-30 18:05:47,440 - __main__ - INFO - Processing task: 8e3ebffa
+2026-01-30 18:05:47,440 - __main__ - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+2026-01-30 18:05:47,440 - fpga_programmer.fpga_programmer - INFO - Programming FPGA with: /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+2026-01-30 18:05:47,440 - fpga_programmer.fpga_programmer - INFO - Timeout: 60s
+2026-01-30 18:06:24,882 - fpga_programmer.fpga_programmer - INFO - FPGA programmed successfully in 37.4s
+2026-01-30 18:06:24,882 - __main__ - INFO - FPGA programmed successfully
+2026-01-30 18:06:24,882 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 18:06:24,882 - __main__ - INFO - ⏱️  Programming time: 37442.10 ms
+2026-01-30 18:06:25,882 - __main__ - INFO - Task completed: 8e3ebffa
+2026-01-30 18:06:48,528 - __main__ - INFO - Client connected: ('192.168.1.1', 44566)
+2026-01-30 18:06:48,528 - __main__ - INFO - Received TASK_REQUEST from ('192.168.1.1', 44566)
+2026-01-30 18:06:48,528 - __main__ - INFO - Task request: bb802587 (Z=48)
+2026-01-30 18:06:48,529 - __main__ - INFO - Processing task: bb802587
+2026-01-30 18:06:48,529 - __main__ - INFO - FPGA already programmed with /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit, skipping programming
+2026-01-30 18:06:48,529 - __main__ - INFO - Notified client that FPGA is ready
+2026-01-30 18:06:48,529 - __main__ - INFO - ⏱️  Programming time: 0.00 ms
+2026-01-30 18:06:49,529 - __main__ - INFO - Task completed: bb802587

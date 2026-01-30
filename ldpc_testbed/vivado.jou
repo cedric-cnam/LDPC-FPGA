@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 30 18:05:48 2026
+# Process ID: 14358
+# Current directory: /home/ryuk/LDPC_testbed/ldpc_testbed
+# Command line: vivado -mode batch -source /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl -tclargs /home/ryuk/LDPC_testbed/ldpc_testbed/fpga/bitfiles/ldpc_z48.bit
+# Log file: /home/ryuk/LDPC_testbed/ldpc_testbed/vivado.log
+# Journal file: /home/ryuk/LDPC_testbed/ldpc_testbed/vivado.jou
+#-----------------------------------------------------------
+source /home/ryuk/LDPC_testbed/ldpc_testbed/controller/../fpga_programmer/program_fpga.tcl
